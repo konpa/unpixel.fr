@@ -1,0 +1,23 @@
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background: $black;
+  color: $white;
+}
+
+.main-header-logo {
+  font-size: 2rem;
+}
+
+.main-header-brand {
+  display: flex;
+  align-items: center;
+}

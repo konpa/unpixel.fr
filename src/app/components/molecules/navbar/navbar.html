@@ -1,0 +1,10 @@
+<nav class="navbar">
+  <ul class="menu">
+    <li ng-repeat="link in vm.menu">
+      <a ui-sref="{{ link }}" ui-sref-active="active" class="link">{{ 'menu.'+link | translate }}</a>
+    </li>
+    <li>
+      <a href="#" class="link bordered">{{ "views.contactMe" | translate }}</a>
+    </li>
+  </ul>
+</nav>
