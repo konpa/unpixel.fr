@@ -12,6 +12,7 @@ import { PricingController } from './views/pricing/pricing.controller';
 import { LocaleService } from '../app/scripts/services/locale.service';
 import { LogoDirective } from '../app/components/atoms/logo/logo.directive';
 import { MainHeaderDirective } from '../app/components/organisms/mainHeader/mainHeader.directive';
+import { PageHeaderDirective } from '../app/components/organisms/pageHeader/pageHeader.directive';
 import { NavbarDirective } from '../app/components/molecules/navbar/navbar.directive';
 import { LanguageSelectDirective } from '../app/components/molecules/languageSelect/languageSelect.directive';
 
@@ -50,5 +51,6 @@ angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
   .service('localeService', LocaleService)
   .directive('logo', LogoDirective)
   .directive('mainHeader', MainHeaderDirective)
+  .directive('pageHeader', PageHeaderDirective)
   .directive('navbar', NavbarDirective)
   .directive('languageSelect', LanguageSelectDirective);
