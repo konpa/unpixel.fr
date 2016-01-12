@@ -1,4 +1,4 @@
-export function LocaleService($translate, LOCALES, $rootScope, tmhDynamicLocale) {
+export function LocaleService($translate, LOCALES, $rootScope, tmhDynamicLocale, $log, $document) {
   'ngInject';
 
   // PREPARING LOCALES INFO
@@ -7,7 +7,7 @@ export function LocaleService($translate, LOCALES, $rootScope, tmhDynamicLocale)
   // locales and locales display names
   var _LOCALES = Object.keys(localesObj);
   if (!_LOCALES || _LOCALES.length === 0) {
-    console.error('There are no _LOCALES provided');
+    $log.error('There are no _LOCALES provided');
   }
   var _LOCALES_DISPLAY_NAMES = [];
   _LOCALES.forEach(function(locale) {
@@ -24,7 +24,7 @@ export function LocaleService($translate, LOCALES, $rootScope, tmhDynamicLocale)
 
   var setLocale = function(locale) {
     if (!checkLocaleIsValid(locale)) {
-      console.error('Locale name "' + locale + '" is invalid');
+      $log.error('Locale name "' + locale + '" is invalid');
       return;
     }
     currentLocale = locale; // updating current locale
@@ -35,12 +35,14 @@ export function LocaleService($translate, LOCALES, $rootScope, tmhDynamicLocale)
 
   // EVENTS
   // on successful applying translations by angular-translate
-  $rootScope.$on('$translateChangeSuccess', function(event, data) {
-    document.documentElement.setAttribute('lang', data.language); // sets "lang" attribute to html
+  var deregistrationCallback = $rootScope.$on('$translateChangeSuccess', function(event, data) {
+    $document[0].documentElement.setAttribute('lang', data.language); // sets "lang" attribute to html
 
     // asking angular-dynamic-locale to load and apply proper AngularJS $locale setting
     tmhDynamicLocale.set(data.language.toLowerCase().replace(/_/g, '-'));
   });
+
+  $rootScope.$on('$destroy', deregistrationCallback);
 
   return {
     getLocaleDisplayName: function() {

@@ -14,16 +14,16 @@ export function PageHeaderDirective() {
 }
 
 class PageHeaderController {
-  constructor() {
+  constructor($document) {
     'ngInject';
 
     // Add a 'js' class to the html tag
     // If you're using modernizr or similar, you
     // won't need to do this
-    document.documentElement.className += " js";
+    $document[0].documentElement.className += " js";
 
     // Fade in videos
-    var fade_in_videos = document.querySelectorAll('.video-bg video');
+    var fade_in_videos = $document[0].querySelectorAll('.video-bg video');
     for (var i = 0; i < fade_in_videos.length; i++) {
       if (fade_in_videos[i].currentTime > 0) {
         // It's already started playing
@@ -43,7 +43,7 @@ class PageHeaderController {
     // media player when clicked
     var iOS = /iPad|iPhone|iPod/.test(navigator.platform);
     if (iOS) {
-      var background_videos = document.querySelectorAll('.video-bg video');
+      var background_videos = $document[0].querySelectorAll('.video-bg video');
       for (i = 0; i < background_videos.length; i++) {
         background_videos[i].parentNode.removeChild(background_videos[i]);
       }
@@ -51,3 +51,5 @@ class PageHeaderController {
 
   }
 }
+
+PageHeaderController.$inject = ["$document"];

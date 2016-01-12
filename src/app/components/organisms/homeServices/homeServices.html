@@ -1,0 +1,15 @@
+<div class="home-services">
+  <article>
+    <header>
+      <h1>{{ "services.title" | translate }}</h1>
+    </header>
+    <p>{{ "services.description" | translate }}</p>
+    <ul>
+      <li ng-repeat="icon in vm.icons"><img ng-src="assets/images/{{ icon.img }}.svg" alt="{{ icon.title }}" /></li>
+    </ul>
+    <footer>
+      <a href="#" class="link action-link home-services__link">{{ "views.seeMore" | translate }}</a>
+    </footer>
+  </article>
+  <div class="bg-overlay"></div>
+</div>

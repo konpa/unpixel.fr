@@ -16,7 +16,7 @@ export function NavbarDirective() {
 }
 
 class NavbarController {
-  constructor ($scope) {
+  constructor ($scope, $document) {
     'ngInject';
 
     this.menu = [
@@ -28,8 +28,8 @@ class NavbarController {
     ];
 
     var slideout = new Slideout({
-      'panel': document.getElementById('panel'),
-      'menu': document.getElementById('menu'),
+      'panel': $document[0].getElementById('panel'),
+      'menu': $document[0].getElementById('menu'),
       'padding': 256,
       'tolerance': 70,
       'side': 'right'
@@ -43,4 +43,4 @@ class NavbarController {
   }
 }
 
-NavbarController.$inject = ["$scope"];
+NavbarController.$inject = ["$scope", "$document"];
