@@ -6,5 +6,6 @@
   "menu.about": "A propos",
   "menu.blog": "Blog",
   "views.contactMe": "Me Contacter",
-  "views.myWork": "Mes Réalisations"
+  "views.myWork": "Réalisations",
+  "views.slogan": "Design, intégration & <br /> développement web"
 }

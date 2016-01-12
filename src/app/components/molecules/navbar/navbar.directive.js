@@ -1,3 +1,5 @@
+import Slideout from 'slideout';
+
 export function NavbarDirective() {
   'ngInject';
 
@@ -24,6 +26,18 @@ class NavbarController {
       "about",
       "blog"
     ];
+
+    var slideout = new Slideout({
+      'panel': document.getElementById('panel'),
+      'menu': document.getElementById('menu'),
+      'padding': 256,
+      'tolerance': 70,
+      'side': 'right'
+    });
+
+    this.toggleMenu = function() {
+      slideout.toggle();
+    };
 
     this.$scope = $scope;
   }

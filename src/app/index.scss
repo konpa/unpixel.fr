@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
 
 // breakpoints
+$tablet: 'max-width: 1024px';
 $phone: 'max-width: 650px';
 
 // vars
@@ -18,8 +19,6 @@ $green: #1FDA9A;
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -47,9 +46,6 @@ img {
   font-weight: 700;
   transition: color 0.3s;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
   -khtml-user-select: none;
@@ -58,7 +54,7 @@ img {
   &:hover,
   &:focus {
     outline: none;
-    color: darken($white, 30%);
+    color: darken($white, 20%);
   }
 }
 
@@ -71,7 +67,7 @@ img {
 
   &:hover,
   &:focus {
-    border-color: darken($white, 30%);
+    border-color: darken($white, 20%);
   }
 }
 

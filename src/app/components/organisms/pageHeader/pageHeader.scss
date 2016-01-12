@@ -1,6 +1,7 @@
 .page-header {
   position: relative;
   overflow: hidden;
+  padding: 0 3%;
   background: lighten($black, 30%);
 }
 .video-bg {
@@ -76,18 +77,31 @@
 \* =============================================== */
 .page-header {
   height: 600px;
-  /* Feel free to set a height in your own way */
+
+  @media ($phone) {
+    height: 350px;
+  }
 }
 .page-header--content {
   position: relative;
   text-align: center;
-  margin-top: 200px;
   color: #FFF;
 }
 
 .page-header--title {
+  margin-top: 200px;
   margin-bottom: 6rem;
   font-size: 4rem;
   line-height: 1;
   font-weight: 900;
+
+  @media ($tablet) {
+    font-size: 3.5rem;
+  }
+
+  @media ($phone) {
+    margin-top: 130px;
+    margin-bottom: 4.5rem;
+    font-size: 1.8rem;
+  }
 }

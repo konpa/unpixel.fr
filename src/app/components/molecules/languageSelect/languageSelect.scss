@@ -4,6 +4,10 @@
   font-size: .9rem;
   font-weight: 300;
 
+  @media ($phone) {
+    display: none;
+  }
+
   span {
     position: relative;
     top: -1px;

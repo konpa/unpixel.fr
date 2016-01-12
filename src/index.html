@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>UN PIXEL | Design, intégration &amp; développement web</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
@@ -24,9 +24,14 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <main-header></main-header>
+    <slideout-menu></slideout-menu>
 
-    <div ui-view></div>
+    <main id="panel">
+      <main-header></main-header>
+      <div ui-view></div>
+    </main>
+
+
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->

@@ -9,12 +9,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 1em 2em;
-  //background: $black;
   color: $white;
+
+  @media ($phone) {
+    padding: 1em 3%;
+    font-size: 1.5rem;
+  }
 }
 
 .main-header-logo {
   font-size: 2rem;
+
+  @media ($phone) {
+    font-size: 1.5rem;
+  }
 }
 
 .main-header-brand {

@@ -1,10 +1,4 @@
 <nav class="navbar">
-  <ul class="menu">
-    <li ng-repeat="link in vm.menu" class="menu-item">
-      <a ui-sref="{{ link }}" ui-sref-active="active" class="link menu-link">{{ 'menu.'+link | translate }}</a>
-    </li>
-    <li class="menu-item menu-item-contact">
-      <a href="#" class="link action-link menu-link menu-link-contact">{{ "views.contactMe" | translate }}</a>
-    </li>
-  </ul>
+  <button class="slide-menu__button link action-link" ng-click="vm.toggleMenu()">Menu</button>
+  <main-menu></main-menu>
 </nav>
