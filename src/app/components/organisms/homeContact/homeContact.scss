@@ -68,9 +68,34 @@
 }
 
 .angular-google-map-container {
-  height: 600px;
+  height: 500px;
 
   @media ($tablet) {
-    height: 450px;
+    height: 350px;
+  }
+}
+
+.home-contact__socials {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    width: 16.66%;
+    padding: 2rem;
+
+    @media ($tablet) {
+      padding: 1rem;
+    }
+
+    @media ($phone) {
+      padding: .5rem;
+    }
+  }
+
+  img {
+    max-width: 100%;
   }
 }

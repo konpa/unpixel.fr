@@ -19,11 +19,52 @@ class HomeContactController {
 
     this.map = {
       center: {
-        latitude: 45,
-        longitude: -73
+        latitude: 43.6062158,
+        longitude: 2.2432363
       },
-      zoom: 8
+      zoom: 15
     };
+
+    this.marker = {
+      id: 0,
+      coords: {
+        latitude: 43.6062158,
+        longitude: 2.2432363
+      }
+    };
+
+    this.socials = [
+      {
+        "name": "google",
+        "link": "#",
+        color: "#dc4e41"
+      },
+      {
+        "name": "email",
+        "link": "#",
+        "color": "#fbbc05"
+      },
+      {
+        "name": "skype",
+        "link": "#",
+        "color": "#00aff0"
+      },
+      {
+        "name": "facebook",
+        "link": "#",
+        "color": "#3b5998"
+      },
+      {
+        "name": "twitter",
+        "link": "#",
+        "color": "#55acee"
+      },
+      {
+        "name": "linkedin",
+        "link": "#",
+        "color": "#0077b5"
+      },
+    ];
 
     this.$scope = $scope;
 

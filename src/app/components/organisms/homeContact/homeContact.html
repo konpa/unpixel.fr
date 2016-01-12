@@ -19,7 +19,12 @@
   </article>
 
   <div class="home-contact__map">
-    <ui-gmap-google-map center='vm.map.center' zoom='vm.map.zoom'></ui-gmap-google-map>
+    <ui-gmap-google-map center='vm.map.center' zoom='vm.map.zoom'>
+      <ui-gmap-marker coords="vm.marker.coords" idkey="vm.marker.id"></ui-gmap-marker>
+    </ui-gmap-google-map>
+    <ul class="home-contact__socials">
+      <li ng-repeat="social in vm.socials" style="background-color: {{ social.color }};"><a href="{{ social.link }}"><img ng-src="assets/images/{{ social.name }}.svg" alt="{{ social.name }}" /></a></li>
+    </ul>
   </div>
 
 </div>
