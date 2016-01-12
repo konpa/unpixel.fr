@@ -63,7 +63,7 @@ class HomeContactController {
         "name": "linkedin",
         "link": "#",
         "color": "#0077b5"
-      },
+      }
     ];
 
     this.$scope = $scope;
