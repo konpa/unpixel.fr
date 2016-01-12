@@ -1,0 +1,25 @@
+<div class="home-contact">
+
+  <article class="home-contact__infos">
+    <div class="container">
+      <header>
+        <h2>{{ "home.contact.title" | translate }}</h2>
+      </header>
+      <p>
+        {{ "home.contact.description" | translate }}
+      </p>
+      <div class="home-contact__phone">
+        <img src="assets/images/phone.svg" alt="phone" />
+        <span>{{ "home.contact.phone" | translate }}</span>
+      </div>
+      <footer>
+        <a href="#" class="link action-link home-contact__button">{{ "home.contact.talkToMe" | translate }}</a>
+      </footer>
+    </div>
+  </article>
+
+  <div class="home-contact__map">
+    <ui-gmap-google-map center='vm.map.center' zoom='vm.map.zoom'></ui-gmap-google-map>
+  </div>
+
+</div>

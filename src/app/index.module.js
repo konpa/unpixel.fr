@@ -15,12 +15,13 @@ import { LogoDirective } from '../app/components/atoms/logo/logo.directive';
 import { SlideoutMenuDirective } from '../app/components/organisms/slideoutMenu/slideoutMenu.directive';
 import { MainHeaderDirective } from '../app/components/organisms/mainHeader/mainHeader.directive';
 import { PageHeaderDirective } from '../app/components/organisms/pageHeader/pageHeader.directive';
+import { HomeContactDirective } from '../app/components/organisms/homeContact/homeContact.directive';
 import { HomeServicesDirective } from '../app/components/organisms/homeServices/homeServices.directive';
 import { MainMenuDirective } from '../app/components/molecules/mainMenu/mainMenu.directive';
 import { NavbarDirective } from '../app/components/molecules/navbar/navbar.directive';
 import { LanguageSelectDirective } from '../app/components/molecules/languageSelect/languageSelect.directive';
 
-angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ui.router', 'toastr', 'pascalprecht.translate', 'tmh.dynamicLocale'])
+angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ui.router', 'toastr', 'pascalprecht.translate', 'tmh.dynamicLocale', 'uiGmapgoogle-maps'])
   .constant('LOCALES', {
     'locales': {
       'fr_FR': 'Français',
@@ -45,6 +46,13 @@ angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
   .config(function (tmhDynamicLocaleProvider) {
     tmhDynamicLocaleProvider.localeLocationPattern('bower_components/angular-i18n/angular-locale_{{locale}}.js');
   })
+  .config(function(uiGmapGoogleMapApiProvider) {
+    uiGmapGoogleMapApiProvider.configure({
+      //    key: 'your api key',
+      v: '3.20', //defaults to latest 3.X anyhow
+      libraries: 'weather,geometry,visualization'
+    });
+  })
   .run(runBlock)
   .controller('WorkController', WorkController)
   .controller('AboutController', AboutController)
@@ -56,6 +64,7 @@ angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
   .directive('featuredProjects', FeaturedProjectsDirective)
   .directive('logo', LogoDirective)
   .directive('slideoutMenu', SlideoutMenuDirective)
+  .directive('homeContact', HomeContactDirective)
   .directive('homeServices', HomeServicesDirective)
   .directive('mainHeader', MainHeaderDirective)
   .directive('pageHeader', PageHeaderDirective)

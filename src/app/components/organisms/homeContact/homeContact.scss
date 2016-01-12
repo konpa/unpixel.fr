@@ -1,0 +1,76 @@
+.home-contact {
+  display: flex;
+  flex-wrap: wrap;
+
+  > article,
+  > div {
+    width: 50%;
+    min-height: 450px;
+
+    @media ($phone) {
+      width: 100%;
+    }
+  }
+
+  article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    @media ($tablet) {
+      padding: 0 2rem;
+    }
+
+    @media ($phone) {
+      padding: 0 1rem;
+    }
+
+    .container {
+      max-width: 400px;
+    }
+
+    h2 {
+      margin: 0;
+      line-height: 1;
+      font-weight: 900;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    footer {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.home-contact__phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+
+  img,
+  span {
+    display: block;
+  }
+
+  img {
+    width: 2rem;
+    margin-right: 1rem;
+    opacity: .4;
+  }
+}
+
+.home-contact__button {
+  color: inherit;
+  border-color: inherit;
+}
+
+.angular-google-map-container {
+  height: 600px;
+
+  @media ($tablet) {
+    height: 450px;
+  }
+}

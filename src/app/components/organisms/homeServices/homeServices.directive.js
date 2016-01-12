@@ -41,7 +41,7 @@ class HomeServicesController {
       {
         "title": "Plane",
         "img": "plane"
-      },
+      }
     ];
 
     this.$scope = $scope;
