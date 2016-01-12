@@ -10,6 +10,7 @@ import { BlogController } from './views/blog/blog.controller';
 import { ServicesController } from './views/services/services.controller';
 import { PricingController } from './views/pricing/pricing.controller';
 import { LocaleService } from '../app/scripts/services/locale.service';
+import { FeaturedProjectsDirective } from '../app/components/organisms/featuredProjects/featuredProjects.directive';
 import { LogoDirective } from '../app/components/atoms/logo/logo.directive';
 import { SlideoutMenuDirective } from '../app/components/organisms/slideoutMenu/slideoutMenu.directive';
 import { MainHeaderDirective } from '../app/components/organisms/mainHeader/mainHeader.directive';
@@ -51,6 +52,7 @@ angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
   .controller('BlogController', BlogController)
   .controller('HomeController', HomeController)
   .service('localeService', LocaleService)
+  .directive('featuredProjects', FeaturedProjectsDirective)
   .directive('logo', LogoDirective)
   .directive('slideoutMenu', SlideoutMenuDirective)
   .directive('mainHeader', MainHeaderDirective)

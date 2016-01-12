@@ -7,5 +7,9 @@
   "menu.blog": "Blog",
   "views.contactMe": "Me Contacter",
   "views.myWork": "Réalisations",
-  "views.slogan": "Design, intégration & <br /> développement web"
+  "header.slogan": "Design, intégration & <br /> développement web",
+  "projects.seeProject": "Voir le projet",
+
+  "projects.wissameCherfiFilms.description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "projects.humansOfDublin.description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 }

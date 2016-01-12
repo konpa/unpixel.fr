@@ -8,10 +8,3 @@ export function SlideoutMenuDirective() {
 
   return directive;
 }
-
-class SlideoutMenuController {
-  constructor() {
-    'ngInject';
-    //
-  }
-}
