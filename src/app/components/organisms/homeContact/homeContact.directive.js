@@ -36,35 +36,38 @@ class HomeContactController {
     this.socials = [
       {
         "name": "google",
-        "link": "#",
+        "link": "https://plus.google.com/113781449538567698056",
         color: "#dc4e41"
       },
       {
         "name": "email",
-        "link": "#",
+        "link": "mailto:julien@unpixel.fr",
         "color": "#fbbc05"
       },
       {
         "name": "skype",
-        "link": "#",
+        "link": "skype:julien.monty?userinfo",
         "color": "#00aff0"
       },
       {
         "name": "facebook",
-        "link": "#",
+        "link": "https://www.facebook.com/unpxl/",
         "color": "#3b5998"
       },
       {
         "name": "twitter",
-        "link": "#",
+        "link": "https://twitter.com/1_pxl",
         "color": "#55acee"
       },
       {
         "name": "linkedin",
-        "link": "#",
+        "link": "https://www.linkedin.com/company/un-pixel",
         "color": "#0077b5"
       }
     ];
+
+    // Typeform script
+    var js,q,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}
 
     this.$scope = $scope;
 

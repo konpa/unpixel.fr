@@ -31,6 +31,9 @@ angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
   })
   .config(config)
   .config(routerConfig)
+  .config(function($compileProvider) {
+    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension|skype):/);
+  })
   .config(function ($translateProvider) {
     $translateProvider.useMissingTranslationHandlerLog();
   })
