@@ -52,8 +52,11 @@
       border-radius: 5rem;
 
       @media ($phone) {
-        width: 5rem;
-        height: 5rem;
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        line-height: 5.5rem;
+        padding: 0 .7rem;
         border-width: 1px;
       }
     }
