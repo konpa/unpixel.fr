@@ -1,0 +1,78 @@
+.pricing-list {
+  display: flex;
+  max-width: 1200px;
+  margin: 4rem auto;
+}
+
+.pricing {
+  width: 33.33%;
+  padding: 0 2rem;
+  border-right: 1px solid darken($soft-grey, 15%);
+  text-align: center;
+
+  &:nth-child(3n) {
+    border: 0;
+  }
+
+  header {
+    margin-bottom: 2rem;
+  }
+
+  h1,
+  h2 {
+    margin: 0;
+    line-height: 1;
+  }
+
+  h1 {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    margin-top: .3rem;
+    padding: 0 15%;
+    font-size: .9rem;
+    color: lighten($black, 45%);
+  }
+
+  footer {
+    margin-top: 3rem;
+  }
+}
+
+.pricing__image {
+  max-width: 80%;
+  border-bottom: 4px solid darken($soft-grey, 10%);
+}
+
+.pricing__price {
+  position: relative;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 900;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    content: "€";
+    padding-left: 5px;
+    font-size: 1rem;
+  }
+}
+
+.pricing__features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: .9rem;
+  color: lighten($black, 40%);
+}
+
+.pricing__button {
+  padding: .5rem 1rem;
+  border-radius: 3px;
+  color: $white;
+  background: $green;
+  text-decoration: none;
+}

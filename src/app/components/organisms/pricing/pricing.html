@@ -1,0 +1,20 @@
+<div class="pricing-list">
+
+  <article class="pricing" ng-repeat="pricing in vm.pricingList">
+    <header>
+      <img src="assets/images/projects/{{ pricing.image }}" alt="{{ pricing.title }}" class="pricing__image" />
+      <h1>{{ "pricing." + pricing.slug + ".title" | translate }}</h1>
+      <h2>{{ "pricing." + pricing.slug + ".subtitle" | translate }}</h2>
+    </header>
+    <div class="pricing__price">
+      {{ pricing.price }}
+    </div>
+    <ul class="pricing__features">
+      <li ng-repeat="feature in pricing.features">{{ "pricing." + pricing.slug + ".features." + feature | translate }}</li>
+    </ul>
+    <footer>
+      <a href="#" class="pricing__button">{{ "views.learnMore" | translate }}</a>
+    </footer>
+  </article>
+
+</div>

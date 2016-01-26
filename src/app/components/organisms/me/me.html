@@ -1,0 +1,48 @@
+<article class="about-me">
+  <div class="about-me__container">
+    <aside class="about-me__image">
+      <img ng-src="assets/images/{{ vm.image }}" alt="Julien" ng-mouseenter="vm.switchImage()" ng-mouseleave="vm.switchImage()" />
+    </aside>
+    <div class="about-me__description">
+      <h2>"{{ "about.me.title" | translate }}"</h2>
+      <p translate="about.me.description" translate-values="about.me.description"></p>
+    </div>
+  </div>
+</article>
+
+<article class="skills">
+  <div class="skills__container">
+    <h2 class="skills__title">{{ "about.favorite_tools" | translate }}</h2>
+    <div class="skills__content">
+      <div class="skill" ng-repeat="skill in vm.skills_dev">
+        <h3>{{ skill.title | translate }}</h3>
+        <ul>
+          <li class="skill__tool" ng-repeat="tool in skill.tools">
+            <div ng-bind-html="tool.icon" class="skill__tool__icon"></div>
+            <div>{{ tool.title }}</div>
+          </li>
+        </ul>
+      </div>
+      <div class="skills__other">
+        <div class="skill skill__other" ng-repeat="skill in vm.skills_other">
+          <h3>{{ skill.title | translate }}</h3>
+          <ul>
+            <li class="skill__tool" ng-repeat="tool in skill.tools">
+              <div ng-bind-html="tool.icon" class="skill__tool__icon"></div>
+              <div>{{ tool.title }}</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="hobbies">
+  <header>
+    {{ "about.hobbies" | translate }}
+  </header>
+  <ul>
+    <li ng-repeat="icon in vm.hobbies" ng-bind-html="icon"></li>
+  </ul>
+</article>

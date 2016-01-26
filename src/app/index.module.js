@@ -10,13 +10,16 @@ import { BlogController } from './views/blog/blog.controller';
 import { ServicesController } from './views/services/services.controller';
 import { PricingController } from './views/pricing/pricing.controller';
 import { LocaleService } from '../app/scripts/services/locale.service';
-import { FeaturedProjectsDirective } from '../app/components/organisms/featuredProjects/featuredProjects.directive';
+import { ProjectsDirective } from '../app/components/organisms/projects/projects.directive';
 import { LogoDirective } from '../app/components/atoms/logo/logo.directive';
 import { SlideoutMenuDirective } from '../app/components/organisms/slideoutMenu/slideoutMenu.directive';
 import { MainHeaderDirective } from '../app/components/organisms/mainHeader/mainHeader.directive';
 import { PageHeaderDirective } from '../app/components/organisms/pageHeader/pageHeader.directive';
 import { HomeContactDirective } from '../app/components/organisms/homeContact/homeContact.directive';
 import { HomeServicesDirective } from '../app/components/organisms/homeServices/homeServices.directive';
+import { ServicesDirective } from '../app/components/organisms/services/services.directive';
+import { PricingDirective } from '../app/components/organisms/pricing/pricing.directive';
+import { MeDirective } from '../app/components/organisms/me/me.directive';
 import { MainMenuDirective } from '../app/components/molecules/mainMenu/mainMenu.directive';
 import { NavbarDirective } from '../app/components/molecules/navbar/navbar.directive';
 import { LanguageSelectDirective } from '../app/components/molecules/languageSelect/languageSelect.directive';
@@ -36,8 +39,6 @@ angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
   })
   .config(function ($translateProvider) {
     $translateProvider.useMissingTranslationHandlerLog();
-  })
-  .config(function ($translateProvider) {
     $translateProvider.useStaticFilesLoader({
         prefix: 'locales/locale-',
         suffix: '.json'
@@ -64,11 +65,14 @@ angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
   .controller('BlogController', BlogController)
   .controller('HomeController', HomeController)
   .service('localeService', LocaleService)
-  .directive('featuredProjects', FeaturedProjectsDirective)
+  .directive('projects', ProjectsDirective)
   .directive('logo', LogoDirective)
   .directive('slideoutMenu', SlideoutMenuDirective)
   .directive('homeContact', HomeContactDirective)
   .directive('homeServices', HomeServicesDirective)
+  .directive('services', ServicesDirective)
+  .directive('pricing', PricingDirective)
+  .directive('me', MeDirective)
   .directive('mainHeader', MainHeaderDirective)
   .directive('pageHeader', PageHeaderDirective)
   .directive('mainMenu', MainMenuDirective)

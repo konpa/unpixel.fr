@@ -1,11 +1,11 @@
-export function HomeServicesDirective() {
+export function ServicesDirective() {
   'ngInject';
 
   let directive = {
     restrict: 'E',
-    templateUrl: 'app/components/organisms/homeServices/homeServices.html',
+    templateUrl: 'app/components/organisms/services/services.html',
     scope: {},
-    controller: HomeServicesController,
+    controller: ServicesController,
     controllerAs: 'vm',
     bindToController: true
   };
@@ -13,7 +13,7 @@ export function HomeServicesDirective() {
   return directive;
 }
 
-class HomeServicesController {
+class ServicesController {
   constructor($scope) {
     'ngInject';
 
@@ -53,4 +53,4 @@ class HomeServicesController {
   }
 }
 
-HomeServicesController.$inject = ["$scope"];
+ServicesController.$inject = ["$scope"];

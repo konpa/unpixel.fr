@@ -1,0 +1,87 @@
+.services-list {
+
+}
+
+.service {
+  position: relative;
+
+  &:nth-child(2n+1) {
+    background-color: #e5e5e5;
+
+    .service__image {
+
+      path {
+        fill: $green;
+      }
+    }
+
+    /*.service__arrow {
+
+      svg {
+        background: $green;
+      }
+    }*/
+
+    .service__title {
+      background: $green;
+    }
+  }
+}
+
+.service__arrow {
+  position: absolute;
+  top: -2rem;
+  width: 100%;
+  text-align: center;
+
+  svg {
+    max-width: 4rem;
+    background: darken(#e5e5e5, 10%);
+    border-radius: 4rem;
+
+    path {
+      fill: $white;
+    }
+  }
+}
+
+.service__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.service__image {
+  width: 45%;
+  padding: 8rem 8rem 8rem 0;
+
+  svg {
+
+    path {
+      fill: $blue;
+    }
+  }
+}
+
+.service__content {
+  width: 55%;
+}
+
+.service__title {
+  display: inline-block;
+  margin: 0;
+  padding: .4rem;
+  line-height: 1;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: $blue;
+  color: $white;
+}
+
+.service__description {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  color: lighten($black, 30%);
+}

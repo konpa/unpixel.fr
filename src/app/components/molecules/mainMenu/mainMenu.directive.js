@@ -21,8 +21,7 @@ class MainMenuController {
       "work",
       "services",
       "pricing",
-      "about",
-      "blog"
+      "about"
     ];
 
     // Typeform script
