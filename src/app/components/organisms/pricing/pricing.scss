@@ -1,5 +1,6 @@
 .pricing-list {
   display: flex;
+  flex-flow: row wrap;
   max-width: 1200px;
   margin: 4rem auto;
 }
@@ -9,6 +10,13 @@
   padding: 0 2rem;
   border-right: 1px solid darken($soft-grey, 15%);
   text-align: center;
+
+  @media ($phone) {
+    width: 100%;
+    padding: 2rem;
+    border-right: 0;
+    border-bottom: 1px solid darken($soft-grey, 15%);
+  }
 
   &:nth-child(3n) {
     border: 0;

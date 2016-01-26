@@ -24,8 +24,11 @@
 }
 
 .page-header__title {
+  max-width: 800px;
   margin-top: 200px;
   margin-bottom: 6rem;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 4rem;
   line-height: 1;
   font-weight: 900;
@@ -51,6 +54,16 @@
     display: block;
     margin: 0 auto;
     max-width: 750px;
+
+    @media ($tablet) {
+      max-width: 80%;
+    }
+
+    @media ($phone) {
+      position: relative;
+      left: -3%;
+      max-width: 106%;
+    }
   }
 }
 
