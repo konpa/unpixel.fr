@@ -10,13 +10,13 @@
   "views.services": "Services",
   "views.myWork": "View my work",
   "views.learnMore": "Learn more",
-  "header.slogan": "I design, integrate & <br> develop for the web",
+  "header.slogan": "I design, integrate & develop for the web",
   "projects.seeProject": "View project",
 
   "projects.wissameCherfiFilms.description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   "projects.humansOfDublin.description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
 
-  "services.title": "Lorem ipsum dolor sit amet",
+  "services.title": "I stay with you all along your project, from the first to the last pixel.",
   "services.description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   "services.research.title": "Recherche",
   "services.research.description": "Cette première étape est un élément clé de la réussite du projet. Elle nécessite de poser les bonnes questions et de bien étudier les réponses, en impliquant tous les acteurs du projet.",
@@ -33,7 +33,7 @@
   "services.maintenance.title": "Maintenance",
   "services.maintenance.description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 
-  "pricing.title": "Je vous propose une solution<br> adaptée à votre projet<br> et à votre budget.",
+  "pricing.title": "Je vous propose une solution adaptée à votre projet et à votre budget.",
   "pricing.cms.title": "Solution CMS",
   "pricing.cms.subtitle": "Pour les petits budgets, facile et rapide à mettre en place",
   "pricing.cms.features.fast": "Rapide à mettre en place",
@@ -50,7 +50,7 @@
   "pricing.admin.features.complex": "4 pages",
   "pricing.admin.features.admin": "Interface administrateur",
 
-  "about.title": "I am passionate about web<br> and technologies.",
+  "about.title": "I am passionate about web and technologies.",
   "about.favorite_tools": "My favorite tools",
   "about.me.title": "My passion for web development pushes me to give the best of myself for each project",
   "about.me.description": "<p>I'm Julien Monty, I'm 28, and I'm a freelance web developer based in France (Tarn, Castres). Even if I try to focus on projects in my area, I regularly work with clients remotely throughout France and abroad (I speak English fluently).</p><p>My passion for web development pushes me to give the best of myself for each project, and to improve my knowledge in the field of web technologies keeping me regularly informed of the latest innovations.</p><p>Indeed, I am interested in computers, and more generally in technologies, from a young age. At 16, I started to learn web development, which has quickly grown into a passion. As a natural consequence, I decided to become a full time freelance web developer after working several years in the field of computing.</p>",
