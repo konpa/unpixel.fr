@@ -17,11 +17,11 @@
   "projects.humansOfDublin.description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
 
   "services.title": "Je vous accompagne tout au long de votre projet, du premier au dernier pixel",
-  "services.description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "services.description": "Pour assurer la réussite d'un projet, il est nécessaire de respecter un cheminement qui permettra d'arriver au résultat qui vous satisfera pleinement. Il est donc nécessaire de passer par un certain nombre d'étapes: la recherche, le concept, le design, le développement, les ajustements, la mise en production et la maintenance.",
   "services.research.title": "Recherche",
   "services.research.description": "Cette première étape est un élément clé de la réussite du projet. Elle nécessite de poser les bonnes questions et de bien étudier les réponses, en impliquant tous les acteurs du projet.",
   "services.concept.title": "Concept",
-  "services.concept.description": "Elle consiste à créer une maquette de l'interface pour définir les zones et composants qu'elle doit contenir. Concrétement, il s'agit d'un croquis permettant de valider son contenu et sa structure.",
+  "services.concept.description": "Cette étape consiste à créer une maquette de l'interface pour définir les zones et composants qu'elle doit contenir. Concrétement, il s'agit d'un croquis permettant de valider son contenu et sa structure.",
   "services.design.title": "Design",
   "services.design.description": "Il s'agit là de créer le design final de l'interface à l'aide d'un logiciel graphique. Il pourra être, si nécessaire, intéractif afin de pouvoir mieux visualiser le résultat final.",
   "services.development.title": "Développement",
@@ -29,9 +29,9 @@
   "services.adjustment.title": "Ajustements",
   "services.adjustment.description": "Maintenant que le développement de l'application est terminé, il peut être nécessaire d'ajuster quelques composants avant sa mise en production.",
   "services.production.title": "Production",
-  "services.production.description": "La mise en production consiste à configurer le serveur qui va héberger l'application ainsi qu'à la déployer lorsque celui-ci est prêt.",
+  "services.production.description": "La mise en production consiste à configurer le serveur qui va héberger l'application afin d'assurer le bon fonctionnement de celle-ci. Lorsque c'est fait, l'application est déployée en production et devient donc accessible aux utilisateurs.",
   "services.maintenance.title": "Maintenance",
-  "services.maintenance.description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "services.maintenance.description": "Après sa mise en production, l'application doit être maintenue afin d'assurer un fonctionnement optimum tout au long de sa vie. Cela peut consister, par exemple, en des mises à jour de sécurité, de performance ou du design.",
 
   "pricing.title": "Je vous propose une solution adaptée à votre projet et à votre budget.",
   "pricing.cms.title": "Solution CMS",
@@ -61,7 +61,7 @@
   "about.hobbies": "Mais je ne travaille pas tout le temps! Je joue souvent au tennis, fait du trail ou de la photographie.",
 
   "home.contact.title": "Travaillons ensemble",
-  "home.contact.description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "home.contact.description": "Vous avez un projet et vous souhaitez m'en faire part? Contactez moi afin que nous puissions en discuter. Je suis impatient de travailler avec vous!",
   "home.contact.phone": "06 52 72 03 55",
   "home.contact.talkToMe": "Parlez moi de votre projet"
 }
