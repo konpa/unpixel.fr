@@ -14,7 +14,7 @@
   }
 
   &:nth-child(2n+1) {
-    background-color: #e5e5e5;
+    background-color: $medium-grey;
 
     .service__image {
 
@@ -37,7 +37,7 @@
 
   svg {
     max-width: 4rem;
-    background: darken(#e5e5e5, 10%);
+    background: $strong-grey;
     border-radius: 4rem;
 
     path {
@@ -107,7 +107,7 @@
 .service__description {
   margin-bottom: 0;
   font-size: 1.1rem;
-  color: lighten($black, 30%);
+  color: $soft-black;
 
   @media ($phone) {
     margin-bottom: 4rem;

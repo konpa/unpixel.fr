@@ -1,29 +1,111 @@
-.pricing-list {
+.pricing__examples {
+  margin: 4rem 0 5rem;
+
+  > h2,
+  > h3 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  > h2 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+
+  > h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $soft-black;
+  }
+}
+
+.pricing__switches {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 6rem auto 5rem auto;
+  cursor: pointer;
+
+  @media ($tablet) {
+    padding: 0 2%;
+  }
+
+  @media ($phone) {
+    margin: 2rem auto;
+  }
+
+  .switch-toggle {
+    width: 47%;
+    font-size: .9rem;
+    cursor: pointer;
+
+    @media ($tablet) {
+      width: 49%;
+    }
+
+    @media ($phone) {
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: .8rem;
+    }
+
+
+    input:focus ~ span a,
+    input:focus + label {
+      outline: 0;
+    }
+  }
+}
+
+.switch-candy a {
+  box-shadow: none;
+  background-color: $green;
+  border-color: $soft-black;
+  background-image: none;
+  cursor: pointer;
+}
+
+.switch-toggle.switch-candy, .switch-light.switch-candy > span {
+  box-shadow: none;
+  background-color: $soft-black;
+  cursor: pointer;
+}
+
+.switch-light.switch-candy input ~ span span:first-child, .switch-light.switch-candy input:checked ~ span span:nth-child(2), .switch-candy input:checked + label,
+.switch-light.switch-candy span span, .switch-light.switch-candy input:checked ~ span span:first-child, .switch-toggle.switch-candy label {
+  color: $white;
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.pricing__examples__list {
   display: flex;
   flex-flow: row wrap;
   max-width: 1200px;
-  margin: 4rem auto;
+  margin: 0 auto 4rem auto;
+
+  @media ($phone) {
+    margin-bottom: 2rem;
+  }
 }
 
 .pricing {
   width: 33.33%;
   padding: 0 2rem;
-  border-right: 1px solid darken($soft-grey, 15%);
+  border-right: 1px solid $strong-grey;
   text-align: center;
 
   @media ($phone) {
     width: 100%;
     padding: 2rem;
     border-right: 0;
-    border-bottom: 1px solid darken($soft-grey, 15%);
+    border-bottom: 1px solid $strong-grey;
   }
 
   &:nth-child(3n) {
     border: 0;
-  }
-
-  header {
-    margin-bottom: 2rem;
   }
 
   h1,
@@ -34,14 +116,24 @@
 
   h1 {
     margin-top: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   h2 {
     margin-top: .3rem;
     padding: 0 15%;
-    font-size: .9rem;
-    color: lighten($black, 45%);
+    font-size: 1rem;
+    font-weight: 400;
+    color: $soft-black;
+  }
+
+  header {
+
+    div {
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: 900;
+    }
   }
 
   footer {
@@ -51,21 +143,73 @@
 
 .pricing__image {
   max-width: 80%;
-  border-bottom: 4px solid darken($soft-grey, 10%);
+  border-bottom: 4px solid $strong-grey;
 }
 
 .pricing__price {
   position: relative;
-  margin-bottom: 2rem;
+  margin: 3rem 0;
   font-size: 2rem;
   font-weight: 900;
 
-  &:after {
-    position: absolute;
-    top: 0;
-    content: "€";
-    padding-left: 5px;
+  .devise {
+    position: relative;
+    top: -1rem;
+    left: -.2rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  .factor {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .unavailable {
+    font-size: 1.2rem;
+  }
+
+  .unavailable__description {
+    font-size: .9rem;
+    font-weight: 400;
+    color: $soft-black;
+  }
+
+  .per_month {
     font-size: 1rem;
+  }
+
+  .monthly__description {
+    font-size: .9rem;
+    font-weight: 400;
+  }
+
+  .separation {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 1.5rem;
+    padding: 0 .1rem;
+    font-size: .9rem;
+    color: $soft-black;
+    text-transform: uppercase;
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 50%;
+      content: "";
+      width: 20px;
+      height: 1px;
+      background: $soft-black;
+    }
+
+    &:before {
+      left: -100%;
+    }
+
+    &:after {
+      right: -100%;
+    }
   }
 }
 
@@ -83,4 +227,31 @@
   color: $white;
   background: $green;
   text-decoration: none;
+}
+
+.pricing__contact {
+  margin-bottom: 4rem;
+  text-align: center;
+
+  a {
+    font-size: 1.1rem;
+    color: $black;
+    border-color: $black;
+  }
+}
+
+.pricing__asterisk {
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  font-size: 1.1rem;
+  text-align: center;
+  color: $soft-black;
+
+  @media ($tablet) {
+    padding: 0 3%;
+  }
+
+  @media ($phone) {
+    font-size: 1rem;
+  }
 }

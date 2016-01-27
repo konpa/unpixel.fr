@@ -19,6 +19,7 @@ import { HomeContactDirective } from '../app/components/organisms/homeContact/ho
 import { HomeServicesDirective } from '../app/components/organisms/homeServices/homeServices.directive';
 import { ServicesDirective } from '../app/components/organisms/services/services.directive';
 import { PricingDirective } from '../app/components/organisms/pricing/pricing.directive';
+import { PaymentDirective } from '../app/components/organisms/payment/payment.directive';
 import { MeDirective } from '../app/components/organisms/me/me.directive';
 import { MainMenuDirective } from '../app/components/molecules/mainMenu/mainMenu.directive';
 import { NavbarDirective } from '../app/components/molecules/navbar/navbar.directive';
@@ -72,6 +73,7 @@ angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
   .directive('homeServices', HomeServicesDirective)
   .directive('services', ServicesDirective)
   .directive('pricing', PricingDirective)
+  .directive('payment', PaymentDirective)
   .directive('me', MeDirective)
   .directive('mainHeader', MainHeaderDirective)
   .directive('pageHeader', PageHeaderDirective)
