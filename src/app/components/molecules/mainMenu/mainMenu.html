@@ -1,8 +1,0 @@
-<ul class="main-menu">
-  <li ng-repeat="link in vm.menu" class="main-menu__item">
-    <a ui-sref="{{ link }}" ui-sref-active="active" class="link main-menu__link">{{ 'menu.'+link | translate }}</a>
-  </li>
-  <li class="main-menu__item">
-    <a class="typeform-share link action-link main-menu__link main-menu__contact-link" href="https://julienmonty.typeform.com/to/{{ 'typeform.id' | translate }}" data-mode="1" target="_blank">{{ "views.contactMe" | translate }}</a>
-  </li>
-</ul>
