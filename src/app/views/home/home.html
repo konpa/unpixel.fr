@@ -1,12 +1,19 @@
 <div class="home-page">
 
-  <page-header
-    video="'typing-macbook'"
-    title="'header.slogan'"
-    link="{'title': 'views.myWork', 'url': 'work'}"
-    image="'false'"
-    background="{'style': 'background-color: #0e0e0e', 'overlay': 'light'}">
-  </page-header>
+  <div class="page-header" style="{{ vm.background.style }}">
+    <div class="video-bg home-video">
+      <video autoplay muted loop poster="assets/images/typing-macbook.jpg">
+        <source src="assets/videos/typing-macbook.mp4" type="video/mp4">
+        <source src="assets/videos/typing-macbook.webm" type="video/webm">
+        <source src="assets/videos/typing-macbook.ogg" type="video/ogg">
+      </video>
+    </div>
+    <div class="bg-overlay light"></div>
+    <div class="page-header__content">
+      <h2 class="page-header__title" translate="header.slogan" translate-values="header.slogan"></h2>
+      <a ui-sref="work" class="link action-link">{{ "views.myWork" | translate }}</a>
+    </div>
+  </div>
 
   <projects show="'featured'"></projects>
 

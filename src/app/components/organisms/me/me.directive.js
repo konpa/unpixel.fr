@@ -17,7 +17,7 @@ class MeController {
   constructor($scope) {
     'ngInject';
 
-    this.image = "me_with_glasses.png";
+    this.image = "me_without_glasses.png";
 
     this.switchImage = function() {
       if(this.image == "me_with_glasses.png"){

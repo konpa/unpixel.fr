@@ -20,11 +20,25 @@ export function PageHeaderDirective() {
 }
 
 class PageHeaderController {
-  constructor($document, $scope) {
+  constructor($document, $scope, $sce, $timeout) {
     'ngInject';
 
-    this.getSourceSrc = function(ext) {
-      return 'assets/videos/' + this.video + '.' + ext;
+    // this.getSourceSrc = function(ext) {
+    //   return 'assets/videos/' + this.video + '.' + ext;
+    // };
+
+    this.immediate = {
+      video: $sce.trustAsResourceUrl("typing-macbook")
+    };
+
+    $timeout(function(){ //Simulate a request
+      $scope.delayed = {
+        video: $sce.trustAsResourceUrl("typing-macbook")
+      };
+    }, 1000);
+
+    this.getVideoUrl = function(video, ext) {
+      return video && $sce.trustAsResourceUrl("assets/videos/" + video + ext);
     };
 
     this.$scope = $scope;
@@ -65,4 +79,4 @@ class PageHeaderController {
   }
 }
 
-PageHeaderController.$inject = ["$document", "$scope"];
+PageHeaderController.$inject = ["$document", "$scope", "$sce", "$timeout"];

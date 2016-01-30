@@ -58,6 +58,11 @@ angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
       libraries: 'weather,geometry,visualization'
     });
   })
+  .filter("trustUrl", ['$sce', function ($sce) {
+      return function (recordingUrl) {
+          return $sce.trustAsResourceUrl(recordingUrl);
+      };
+  }])
   .run(runBlock)
   .controller('WorkController', WorkController)
   .controller('AboutController', AboutController)
