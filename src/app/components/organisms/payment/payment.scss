@@ -17,6 +17,14 @@
       font-size: 1.2rem;
     }
   }
+
+  p {
+    margin: 2rem 0 0;
+    text-align: center;
+    color: $soft-black;
+    font-style: italic;
+    font-size: .9rem;
+  }
 }
 
 .pricing__payment__methods {

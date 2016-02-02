@@ -23,6 +23,7 @@ import { PaymentDirective } from '../app/components/organisms/payment/payment.di
 import { MeDirective } from '../app/components/organisms/me/me.directive';
 import { MainMenuDirective } from '../app/components/molecules/mainMenu/mainMenu.directive';
 import { NavbarDirective } from '../app/components/molecules/navbar/navbar.directive';
+import { MainFooterDirective } from '../app/components/organisms/mainFooter/mainFooter.directive';
 import { LanguageSelectDirective } from '../app/components/molecules/languageSelect/languageSelect.directive';
 
 angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ui.router', 'toastr', 'pascalprecht.translate', 'tmh.dynamicLocale', 'uiGmapgoogle-maps'])
@@ -53,16 +54,10 @@ angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
   })
   .config(function(uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({
-      //    key: 'your api key',
-      v: '3.20', //defaults to latest 3.X anyhow
+      v: '3.20',
       libraries: 'weather,geometry,visualization'
     });
   })
-  .filter("trustUrl", ['$sce', function ($sce) {
-      return function (recordingUrl) {
-          return $sce.trustAsResourceUrl(recordingUrl);
-      };
-  }])
   .run(runBlock)
   .controller('WorkController', WorkController)
   .controller('AboutController', AboutController)
@@ -84,4 +79,5 @@ angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
   .directive('pageHeader', PageHeaderDirective)
   .directive('mainMenu', MainMenuDirective)
   .directive('navbar', NavbarDirective)
+  .directive('mainFooter', MainFooterDirective)
   .directive('languageSelect', LanguageSelectDirective);
