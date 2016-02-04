@@ -2,8 +2,8 @@
 <html ng-app="unpixel" ng-strict-di>
   <head>
     <meta charset="utf-8">
-    <title>{{ 'site.title' | translate }}</title>
-    <base href="/unpixel.fr/">
+    <title translate="site.title"></title>
+    <base href="/">
     <meta name="description" content="{{ 'site.description' | translate }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -29,7 +29,7 @@
 
     <main id="panel">
       <main-header></main-header>
-      <div ui-view></div>
+      <div ui-view class="anim-in-out anim-fade" data-anim-speed="1000"></div>
       <home-contact></home-contact>
     </main>
 

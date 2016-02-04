@@ -30,7 +30,7 @@ $blue: #2FCFFF;
 html,
 body {
   font-family: "Open Sans", sans-serif;
-  background: $soft-grey;
+  background: $black;
 }
 
 h1,
@@ -80,6 +80,7 @@ img {
   position: relative;
   z-index: 1;
   box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3);
+  background: $soft-grey;
 }
 
 // Loading bar
@@ -87,6 +88,7 @@ img {
   background: $green;
 }
 
+/* Fancy blur effect */
 #loading-bar .peg {
   -moz-box-shadow: $green 1px 0 6px 1px;
   -ms-box-shadow: $green 1px 0 6px 1px;

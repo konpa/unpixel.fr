@@ -15,7 +15,7 @@
     <h2 class="skills__title">{{ "about.favorite_tools" | translate }}</h2>
     <div class="skills__content">
       <div class="skill" ng-repeat="skill in vm.skills_dev">
-        <h3>{{ skill.title | translate }}</h3>
+        <h3 translate="{{ skill.title }}"></h3>
         <ul>
           <li class="skill__tool" ng-repeat="tool in skill.tools">
             <div ng-bind-html="tool.icon" class="skill__tool__icon"></div>
@@ -25,7 +25,7 @@
       </div>
       <div class="skills__other">
         <div class="skill skill__other" ng-repeat="skill in vm.skills_other">
-          <h3>{{ skill.title | translate }}</h3>
+          <h3 translate="{{ skill.title }}"></h3>
           <ul>
             <li class="skill__tool" ng-repeat="tool in skill.tools">
               <div ng-bind-html="tool.icon" class="skill__tool__icon"></div>
@@ -39,9 +39,7 @@
 </article>
 
 <article class="hobbies">
-  <header>
-    {{ "about.hobbies" | translate }}
-  </header>
+  <header translate="about.hobbies"></header>
   <ul>
     <li ng-repeat="icon in vm.hobbies" ng-bind-html="icon"></li>
   </ul>

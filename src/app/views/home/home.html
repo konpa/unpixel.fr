@@ -9,14 +9,15 @@
       </video>
     </div>
     <div class="bg-overlay light"></div>
-    <div class="page-header__content">
+    <div class="page-header__content anim-slide-right">
       <h2 class="page-header__title" translate="header.slogan" translate-values="header.slogan"></h2>
-      <a ui-sref="work" class="link action-link">{{ "views.myWork" | translate }}</a>
+      <a ui-sref="work" class="link action-link" translate="views.myWork"></a>
     </div>
   </div>
 
-  <projects show="'featured'"></projects>
-
-  <home-services></home-services>
+  <div class="anim-slide-below">
+    <projects show="'featured'"></projects>
+    <home-services></home-services>
+  </div>
 
 </div>

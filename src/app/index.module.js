@@ -26,7 +26,7 @@ import { NavbarDirective } from '../app/components/molecules/navbar/navbar.direc
 import { MainFooterDirective } from '../app/components/organisms/mainFooter/mainFooter.directive';
 import { LanguageSelectDirective } from '../app/components/molecules/languageSelect/languageSelect.directive';
 
-angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ui.router', 'toastr', 'pascalprecht.translate', 'tmh.dynamicLocale', 'uiGmapgoogle-maps', 'angular-loading-bar'])
+angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ui.router', 'toastr', 'pascalprecht.translate', 'tmh.dynamicLocale', 'uiGmapgoogle-maps', 'anim-in-out', 'angular-loading-bar'])
   .constant('LOCALES', {
     'locales': {
       'fr_FR': 'Français',
@@ -59,9 +59,9 @@ angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
       libraries: 'weather,geometry,visualization'
     });
   })
-  .config(function(cfpLoadingBarProvider) {
-    cfpLoadingBarProvider.includeSpinner = false;
-  })
+  // .config(function(cfpLoadingBarProvider) {
+  //   cfpLoadingBarProvider.includeSpinner = true;
+  // })
   .run(runBlock)
   .controller('WorkController', WorkController)
   .controller('AboutController', AboutController)

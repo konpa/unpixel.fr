@@ -24,6 +24,7 @@
     "scrollme": "~1.1.0",
     "jquery": "2.2.0",
     "css-toggle-switch": "~4.0.2",
+    "angular-ui-router-anim-in-out": "~1.0.2",
     "angular-loading-bar": "~0.8.0"
   },
   "devDependencies": {

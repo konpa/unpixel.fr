@@ -1,14 +1,14 @@
 <div class="home-services soft-blur">
   <article>
     <header>
-      <h1 translate="services.title" translate-values="services.title"></h1>
+      <h1 translate="services.title"></h1>
     </header>
-    <p>{{ "services.description" | translate }}</p>
+    <p translate="services.description"></p>
     <ul>
       <li ng-repeat="service in vm.services" ng-bind-html="service.image" class="icon_{{ service.slug }}"></li>
     </ul>
     <footer>
-      <a ui-sref="services" class="link action-link home-services__link">{{ "views.learnMore" | translate }}</a>
+      <a ui-sref="services" class="link action-link home-services__link" translate="views.learnMore"></a>
     </footer>
   </article>
   <div class="bg-overlay dark"></div>

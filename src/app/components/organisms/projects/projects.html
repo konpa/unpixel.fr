@@ -9,13 +9,11 @@
     <div class="featured-project__desc" style="background-color: {{ project.textBgColor }}; color: {{ project.textColor }}">
       <div class="container">
         <header>
-          <h1>{{ project.title }}</h1>
+          <h1 ng-bind="project.title"></h1>
         </header>
-        <p>
-          {{ project.description | translate }}
-        </p>
+        <p translate="{{ project.description }}"></p>
         <footer>
-          <a href="project/{{ project.slug }}" class="link action-link featured-project__link">{{ "projects.seeProject" | translate }}</a>
+          <a href="project/{{ project.slug }}" class="link action-link featured-project__link" translate="projects.seeProject"></a>
         </footer>
       </div>
     </div>

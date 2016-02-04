@@ -3,23 +3,23 @@
   <div class="pricing__switches">
     <div class="switch-toggle switch-candy">
       <input id="cash" name="methods" type="radio" value="cash" ng-model="vm.currentPricing">
-      <label for="cash" onclick="">{{ "pricing.methods.cash" | translate }}</label>
+      <label for="cash" onclick="" translate="pricing.methods.cash"></label>
 
       <input id="three" name="methods" type="radio" value="three" ng-model="vm.currentPricing">
-      <label for="three" onclick="">{{ "pricing.methods.three" | translate }}</label>
+      <label for="three" onclick="" translate="pricing.methods.three"></label>
 
       <input id="monthly" name="methods" type="radio" value="monthly" ng-model="vm.currentPricing">
-      <label for="monthly" onclick="">{{ "pricing.methods.monthly" | translate }}</label>
+      <label for="monthly" onclick="" translate="pricing.methods.monthly"></label>
 
       <a></a>
     </div>
 
     <div class="switch-toggle switch-candy">
       <input id="with_maintenance" name="maintenance" type="radio" value="true" ng-model="vm.maintenance">
-      <label for="with_maintenance" onclick="">{{ "pricing.methods.with_maintenance" | translate }}</label>
+      <label for="with_maintenance" onclick="" translate="pricing.methods.with_maintenance"></label>
 
       <input id="without_maintenance" name="maintenance" type="radio" value="false" ng-model="vm.maintenance">
-      <label for="without_maintenance" onclick="">{{ "pricing.methods.without_maintenance" | translate }}</label>
+      <label for="without_maintenance" onclick="" translate="pricing.methods.without_maintenance"></label>
 
       <a></a>
     </div>
@@ -30,8 +30,8 @@
     <article class="pricing" ng-repeat="pricing in vm.pricingList">
       <header>
         <img ng-src="assets/images/projects/{{ pricing.image }}" alt="{{ pricing.title }}" class="pricing__image" />
-        <h1>{{ "pricing." + pricing.slug + ".title" | translate }}</h1>
-        <h2>{{ "pricing." + pricing.slug + ".subtitle" | translate }}</h2>
+        <h1 translate="pricing.{{ pricing.slug }}.title"></h1>
+        <h2 translate="pricing.{{ pricing.slug }}.subtitle"></h2>
         <div ng-if="vm.maintenance == 'true'">+ {{ "pricing.maintenance" | translate }}</div>
       </header>
       <div class="pricing__price">
@@ -56,17 +56,17 @@
         </div>
 
         <div class="unavailable" ng-if="vm.currentPricing == 'monthly' && vm.maintenance == 'false'">
-          <div class="unavailable">{{ "pricing.unavailable" | translate }}</div>
+          <div class="unavailable" translate="pricing.unavailable"></div>
           <div class="unavailable__description">({{ "pricing.unavailable.description" | translate }})</div>
         </div>
 
       </div>
       <ul class="pricing__features">
         <li ng-repeat="feature in pricing.features">{{ "pricing." + pricing.slug + ".features." + feature | translate }}</li>
-        <li ng-if="vm.maintenance == 'true'">{{ "pricing.features.maintenance" | translate }}</li>
+        <li ng-if="vm.maintenance == 'true'" translate="pricing.features.maintenance"></li>
       </ul>
       <footer>
-        <a href="#" class="pricing__button">{{ "projects.seeProject" | translate }}</a>
+        <a href="#" class="pricing__button" translate="projects.seeProject"></a>
       </footer>
     </article>
   </div>
@@ -78,6 +78,6 @@
   </div>
 
   <div class="pricing__contact">
-    <a class="typeform-share link action-link" href="https://julienmonty.typeform.com/to/{{ 'typeform.id' | translate }}" data-mode="1" target="_blank">{{ "pricing.contact" | translate }}</a>
+    <a class="typeform-share link action-link" href="https://julienmonty.typeform.com/to/{{ 'typeform.id' | translate }}" data-mode="1" target="_blank" translate="pricing.contact"></a>
   </div>
 </div>

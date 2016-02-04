@@ -15,9 +15,7 @@
         <header>
           <h1 class="service__title">{{ $index + 1 }}. {{ "services." + service.slug + ".title" | translate }}</h1>
         </header>
-        <p class="service__description">
-          {{ "services." + service.slug + ".description" | translate }}
-        </p>
+        <p class="service__description" translate="services.{{ service.slug }}.description"></p>
       </div>
     </div>
   </article>
