@@ -17,13 +17,13 @@ class MeController {
   constructor($scope) {
     'ngInject';
 
-    this.image = "me_without_glasses.png";
+    this.image = "me_without_glasses.jpg";
 
     this.switchImage = function() {
-      if(this.image == "me_with_glasses.png"){
-        this.image = "me_without_glasses.png";
+      if(this.image == "me_with_glasses.jpg"){
+        this.image = "me_without_glasses.jpg";
       } else {
-        this.image = "me_with_glasses.png";
+        this.image = "me_with_glasses.jpg";
       }
     }
 

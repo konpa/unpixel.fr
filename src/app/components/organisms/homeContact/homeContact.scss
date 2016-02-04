@@ -44,6 +44,21 @@
   }
 }
 
+.home-contact__infos {
+  position: relative;
+
+  > img {
+    position: absolute;
+    bottom: 0;
+    left: -8%;
+    max-width: 30%;
+
+    @media ($tablet) {
+      display: none;
+    }
+  }
+}
+
 .home-contact__phone {
   display: flex;
   justify-content: center;

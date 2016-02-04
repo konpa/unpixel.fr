@@ -26,7 +26,7 @@ import { NavbarDirective } from '../app/components/molecules/navbar/navbar.direc
 import { MainFooterDirective } from '../app/components/organisms/mainFooter/mainFooter.directive';
 import { LanguageSelectDirective } from '../app/components/molecules/languageSelect/languageSelect.directive';
 
-angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ui.router', 'toastr', 'pascalprecht.translate', 'tmh.dynamicLocale', 'uiGmapgoogle-maps'])
+angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ui.router', 'toastr', 'pascalprecht.translate', 'tmh.dynamicLocale', 'uiGmapgoogle-maps', 'angular-loading-bar'])
   .constant('LOCALES', {
     'locales': {
       'fr_FR': 'Français',
@@ -36,8 +36,9 @@ angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
   })
   .config(config)
   .config(routerConfig)
-  .config(function($compileProvider) {
+  .config(function($compileProvider, $locationProvider) {
     $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension|skype):/);
+    $locationProvider.html5Mode(true);
   })
   .config(function ($translateProvider) {
     $translateProvider.useMissingTranslationHandlerLog();
@@ -57,6 +58,9 @@ angular.module('unpixel', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'n
       v: '3.20',
       libraries: 'weather,geometry,visualization'
     });
+  })
+  .config(function(cfpLoadingBarProvider) {
+    cfpLoadingBarProvider.includeSpinner = false;
   })
   .run(runBlock)
   .controller('WorkController', WorkController)
