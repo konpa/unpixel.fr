@@ -1,5 +1,6 @@
 export function routerConfig ($stateProvider, $urlRouterProvider) {
   'ngInject';
+  $urlRouterProvider.otherwise('/');
   $stateProvider
     .state('home', {
       url: '/',
@@ -37,6 +38,4 @@ export function routerConfig ($stateProvider, $urlRouterProvider) {
       controller: 'BlogController',
       controllerAs: 'blog'
     });
-
-  $urlRouterProvider.otherwise('/');
 }
