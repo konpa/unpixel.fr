@@ -29,7 +29,7 @@
 
     <article class="pricing" ng-repeat="pricing in vm.pricingList">
       <header>
-        <img ng-src="assets/images/projects/{{ pricing.image }}" alt="{{ pricing.title }}" class="pricing__image" />
+        <img ng-src="assets/images/projects/{{ pricing.example_slug }}.png" alt="{{ pricing.title }}" class="pricing__image" />
         <h1 translate="pricing.{{ pricing.slug }}.title"></h1>
         <h2 translate="pricing.{{ pricing.slug }}.subtitle"></h2>
         <div ng-if="vm.maintenance == 'true'">+ {{ "pricing.maintenance" | translate }}</div>
@@ -66,7 +66,7 @@
         <li ng-if="vm.maintenance == 'true'" translate="pricing.features.maintenance"></li>
       </ul>
       <footer>
-        <a href="#" class="pricing__button" translate="projects.seeProject"></a>
+        <a ui-sref="work({'#': pricing.example_slug})" class="pricing__button" translate="projects.seeProject"></a>
       </footer>
     </article>
   </div>
@@ -78,6 +78,6 @@
   </div>
 
   <div class="pricing__contact">
-    <a class="typeform-share link action-link" href="https://julienmonty.typeform.com/to/{{ 'typeform.id' | translate }}" data-mode="1" target="_blank" translate="pricing.contact"></a>
+    <a class="typeform-share link action-link" ng-href="https://julienmonty.typeform.com/to/{{ 'typeform.id' | translate }}" data-mode="1" target="_blank" translate="pricing.contact"></a>
   </div>
 </div>

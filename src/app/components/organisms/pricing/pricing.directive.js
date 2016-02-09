@@ -20,7 +20,7 @@ class PricingController {
     this.pricingList = [
       {
         "slug": "cms",
-        "image": "aiklein_browser.png",
+        "example_slug": "aiklein",
         "price": {
           "core": 490,
           "maintenance": 420
@@ -29,7 +29,7 @@ class PricingController {
       },
       {
         "slug": "onePage",
-        "image": "unpixel_browser.png",
+        "example_slug": "unpixel",
         "price": {
           "core": 980,
           "maintenance": 210
@@ -38,7 +38,7 @@ class PricingController {
       },
       {
         "slug": "admin",
-        "image": "wissame-cherfi-films_browser.png",
+        "example_slug": "wissame-cherfi-films",
         "price": {
           "core": 2450,
           "maintenance": 840

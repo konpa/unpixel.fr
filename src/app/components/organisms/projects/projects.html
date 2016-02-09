@@ -1,9 +1,9 @@
 <div class="featured-projects">
 
-  <article ng-repeat="project in vm.projects">
+  <article ng-repeat="project in vm.projects" id="{{ project.slug }}">
     <div class="featured-project__img" ng-class="{webpage: project.webpageImg}" style="background-color: {{ project.imgBgColor }}; color: {{ project.color }}">
       <div class="container">
-        <img ng-src="assets/images/{{ project.slug }}_featured.png" alt="" />
+        <img ng-src="assets/images/projects/{{ project.slug }}.png" alt="" />
       </div>
     </div>
     <div class="featured-project__desc" style="background-color: {{ project.textBgColor }}; color: {{ project.textColor }}">
@@ -13,7 +13,7 @@
         </header>
         <p translate="{{ project.description }}"></p>
         <footer>
-          <a href="project/{{ project.slug }}" class="link action-link featured-project__link" translate="projects.seeProject"></a>
+          <a ng-href="{{ project.link }}" target="_blank" class="link action-link featured-project__link" translate="{{ project.link_text }}"></a>
         </footer>
       </div>
     </div>

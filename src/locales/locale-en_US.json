@@ -17,9 +17,14 @@
   "views.month": "month",
   "header.slogan": "I design, integrate & develop for the web",
   "projects.seeProject": "View project",
+  "projects.seeWebsite": "Go to website",
 
-  "projects.wissameCherfiFilms.description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "projects.humansOfDublin.description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  "projects.wissameCherfiFilms.description": "Customized portfolio for a filmmaker. This website presents his activity and the projects he has done. Moreover, it contains an administrator panel allowing to add and update the projects and all information contained in the website.",
+  "projects.humansOfDublin.description": "I designed the logo for the organization 'Human of Dublin'. It had to contain the initials of the organization and the most famous buildings of Dublin city, while including the notion of humanity.",
+  "projects.devicon.description": "I designed and build a series of icon and the showcase website. It presents the project and guide the users through the implementation of the icons in their project.",
+  "projects.VPwordmark.description": "I redesigned the wordmark logo of a professional photographer. The initials of the old logo has been integrated into lines reminding of a SLR lens. The font has also been updated.",
+  "projects.aiklein.description": "I integrated a wordpress theme for a car import company. The service included the implementation of the Wordpress CMS and the chosen theme, the customization of this theme as well as an administrator training.",
+  "projects.healme.description": "I designed and build a showcase website for a therapist to present his activity. It allows, among others, to list the services and activities he offers and the places and times where he practices.",
 
   "services.title": "I stay with you all along your project, from the first to the last pixel.",
   "services.description": "To ensure the success of a project, it is necessary to follow a path in order to optimize our chances in achieving something that will fully satisfy you. It is therefore necessary to go through a number of stages: research, concept, design, development, adjustments, production and maintenance.",

@@ -11,10 +11,10 @@
         <span translate="home.contact.phone"></span>
       </a>
       <footer>
-        <a class="typeform-share link action-link home-contact__button" href="https://julienmonty.typeform.com/to/{{ 'typeform.id' | translate }}" data-mode="1" target="_blank" translate="home.contact.talkToMe"></a>
+        <a class="typeform-share link action-link home-contact__button" ng-href="https://julienmonty.typeform.com/to/{{ 'typeform.id' | translate }}" data-mode="1" target="_blank" translate="home.contact.talkToMe"></a>
       </footer>
     </div>
-    <img src="assets/images/me_with_glasses.jpg" alt="Julien Monty" />
+    <img src="assets/images/me_without_glasses.jpg" alt="Julien Monty" />
   </article>
 
   <div class="home-contact__map">
@@ -22,7 +22,7 @@
       <ui-gmap-marker coords="vm.marker.coords" idkey="vm.marker.id"></ui-gmap-marker>
     </ui-gmap-google-map>
     <ul class="home-contact__socials">
-      <li ng-repeat="social in vm.socials" class="social-icon {{ social.name }}"><a href="{{ social.link }}" target="_blank" ng-bind-html="social.image"></a></li>
+      <li ng-repeat="social in vm.socials" class="social-icon {{ social.name }}"><a ng-href="{{ social.link }}" target="_blank" ng-bind-html="social.image"></a></li>
     </ul>
   </div>
 
