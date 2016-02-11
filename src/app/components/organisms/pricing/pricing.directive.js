@@ -29,7 +29,7 @@ class PricingController {
       },
       {
         "slug": "onePage",
-        "example_slug": "unpixel",
+        "example_slug": "studio-konpa",
         "price": {
           "core": 980,
           "maintenance": 210

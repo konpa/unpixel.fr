@@ -14,7 +14,7 @@
   }
 
   &:nth-child(2n+1) {
-    background-color: $medium-grey;
+    background-color: $white;
 
     .service__image {
 
@@ -37,7 +37,7 @@
 
   svg {
     max-width: 4rem;
-    background: $strong-grey;
+    background: $medium-grey;
     border-radius: 4rem;
 
     path {
