@@ -7,7 +7,6 @@ var conf = require('./conf');
 var karma = require('karma');
 
 var pathSrcHtml = [
-  path.join(conf.paths.tmp, '/serve/**/*.html'),
   path.join(conf.paths.src, '/**/*.html')
 ];
 
@@ -44,7 +43,7 @@ function runTests (singleRun, done) {
   server.start();
 }
 
-gulp.task('test', ['scripts:test', 'markups'], function(done) {
+gulp.task('test', ['scripts:test'], function(done) {
   runTests(true, done);
 });
 

@@ -1,0 +1,10 @@
+<div class="page-header anim-slide-top" style="{{ vm.background.style }}">
+  <div class="bg-overlay {{ vm.background.overlay }}"></div>
+  <div class="page-header__content">
+    <h2 class="page-header__title anim-slide-right" ng-if="vm.title" translate="{{ vm.title }}"></h2>
+    <a ng-if="vm.link" ui-sref="{{ vm.link.url }}" class="link action-link" translate="{{ vm.link.title }}"></a>
+    <div class="page-header__image anim-slide-right">
+      <img ng-if="vm.image" ng-src="assets/images/projects/{{ vm.image.slug }}.png" alt="{{ vm.image.title }}" />
+    </div>
+  </div>
+</div>

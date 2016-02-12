@@ -1,0 +1,94 @@
+.home-services {
+  position: relative;
+  background: url(../assets/images/desk-bg.jpg) no-repeat center center;
+  background-size: cover;
+  color: $white;
+
+  article {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 7rem 0;
+    text-align: center;
+
+    @media ($tablet) {
+      padding: 6rem 2rem;
+    }
+
+    @media ($phone) {
+      padding: 5rem 1rem;
+    }
+
+    h1 {
+      margin: 0;
+      line-height: 1;
+      font-weight: 900;
+      font-size: 2.5rem;
+
+      @media ($tablet) {
+        line-height: 1;
+        font-size: 2rem;
+      }
+    }
+
+    ul {
+      margin: 4rem 0;
+      padding: 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+    }
+
+    li {
+      margin: .5rem 0;
+      width: 6rem;
+      height: 6rem;
+      line-height: 6rem;
+      padding: 1.1rem;
+      border: 2px solid $white;
+      border-radius: 5rem;
+
+      @media ($phone) {
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        line-height: 5.5rem;
+        padding: 0 .7rem;
+        border-width: 1px;
+      }
+    }
+
+    svg {
+
+      path {
+        fill: #fff;
+      }
+    }
+
+    .icon_maintenance {
+
+      svg {
+        position: relative;
+        top: -3px;
+      }
+    }
+  }
+}
+
+.home-services__link {
+  font-size: 1.2rem;
+  font-weight: 400;
+
+  &.bordered {
+    border-color: $white;
+    border-width: 2px;
+
+    &:hover {
+      background: $white;
+      color: $black;
+    }
+  }
+}

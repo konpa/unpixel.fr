@@ -1,0 +1,26 @@
+<div class="projects">
+
+  <article ng-repeat="project in vm.projects" id="{{ project.slug }}">
+    <div class="project__img" ng-class="{webpage: project.webpageImg}" style="background-color: {{ project.imgBgColor }}; color: {{ project.color }}">
+      <div class="container">
+        <img ng-src="assets/images/projects/{{ project.slug }}.png" alt="{{ project.title }}" style="border-color: {{ project.borderColor }}" />
+      </div>
+    </div>
+    <div class="project__desc" style="background-color: {{ project.textBgColor }}; color: {{ project.textColor }}">
+      <div class="container">
+        <header>
+          <h1 ng-bind="project.title"></h1>
+        </header>
+        <ul class="project__technos">
+          <li ng-repeat="techno in project.technos" ng-bind-html="techno.svg"></li>
+        </ul>
+        <p translate="{{ project.description }}"></p>
+
+        <footer>
+          <a ng-href="{{ project.link }}" target="_blank" class="link action-link project__link" translate="{{ project.link_text }}"></a>
+        </footer>
+      </div>
+    </div>
+  </article>
+
+</div>

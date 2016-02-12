@@ -1,10 +1,11 @@
 <!doctype html>
-<html ng-app="newWebsite" ng-strict-di>
+<html ng-app="unpixel" ng-strict-di>
   <head>
     <meta charset="utf-8">
-    <title>newWebsite</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <title translate="site.title">UN PIXEL | Design, intégration & développement web</title>
+    <meta name="description" content="Un Pixel vous accompagne dans tous vos projets de design, intégration et développement web.">
+    <meta http-equiv="Content-Language" content="fr" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
@@ -24,7 +25,18 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div ui-view></div>
+    <update-title title="{{ 'site.title' | translate }}"></update-title>
+    <update-meta name="description" content="{{ 'site.title' | translate }}"></update-meta>
+
+    <slideout-menu></slideout-menu>
+
+    <main id="panel">
+      <main-header></main-header>
+      <div ui-view class="anim-in-out anim-fade" data-anim-speed="500" autoscroll="false"></div>
+      <home-contact></home-contact>
+    </main>
+
+    </script>
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->

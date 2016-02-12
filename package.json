@@ -1,7 +1,9 @@
 {
   "name": "newWebsite",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "slideout": "^0.1.11"
+  },
   "scripts": {
     "test": "gulp test"
   },

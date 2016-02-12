@@ -1,0 +1,29 @@
+<div class="home-contact">
+
+  <article class="home-contact__infos">
+    <div class="container">
+      <header>
+        <h2 translate="home.contact.title"></h2>
+      </header>
+      <p translate="home.contact.description"></p>
+      <a href="tel:0033652720355" class="home-contact__phone">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.442 27.442"><path d="M19.494 0H7.948A1.997 1.997 0 0 0 5.95 2v23.445c0 1.102.893 1.997 1.998 1.997h11.546a1.998 1.998 0 0 0 1.997-1.997V2a2 2 0 0 0-1.996-2zm-8.622 1.214h5.7c.144 0 .26.215.26.48s-.116.483-.26.483h-5.7c-.145 0-.26-.216-.26-.482s.115-.48.26-.48zm2.85 24.255a1.275 1.275 0 1 1 0-2.55 1.275 1.275 0 0 1 0 2.55zm6.273-4.37H7.448V3.373h12.547V21.1z"/></svg>
+        <span translate="home.contact.phone"></span>
+      </a>
+      <footer>
+        <a class="typeform-share link action-link home-contact__button" ng-href="https://julienmonty.typeform.com/to/{{ 'typeform.id' | translate }}" data-mode="1" target="_blank" translate="home.contact.talkToMe"></a>
+      </footer>
+    </div>
+    <img src="assets/images/me_without_glasses.jpg" alt="Julien Monty" />
+  </article>
+
+  <div class="home-contact__map">
+    <ui-gmap-google-map center='vm.map.center' zoom='vm.map.zoom'>
+      <ui-gmap-marker coords="vm.marker.coords" idkey="vm.marker.id"></ui-gmap-marker>
+    </ui-gmap-google-map>
+    <ul class="home-contact__socials">
+      <li ng-repeat="social in vm.socials" class="social-icon {{ social.name }}"><a ng-href="{{ social.link }}" target="_blank" ng-bind-html="social.image"></a></li>
+    </ul>
+  </div>
+
+</div>

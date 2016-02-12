@@ -1,0 +1,144 @@
+.page-header {
+  position: relative;
+  overflow: hidden;
+  padding: 0 3%;
+  background: no-repeat center center lighten($black, 30%);
+  background-size: cover;
+}
+
+.page-header {
+  height: 600px;
+
+  @media ($phone) {
+    height: 350px;
+  }
+}
+
+.page-header__content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #FFF;
+}
+
+.page-header__title {
+  max-width: 800px;
+  margin-top: 200px;
+  margin-bottom: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 900;
+
+  @media ($tablet) {
+    font-size: 3.5rem;
+  }
+
+  @media ($phone) {
+    margin-top: 130px;
+    margin-bottom: 4.5rem;
+    font-size: 1.6rem;
+  }
+}
+
+.page-header__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 750px;
+
+    @media ($tablet) {
+      max-width: 80%;
+    }
+
+    @media ($phone) {
+      position: relative;
+      left: -3%;
+      max-width: 106%;
+    }
+  }
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+
+  &.light {
+    background: rgba(0,0,0,0.3);
+  }
+
+  &.medium {
+    background: rgba(0,0,0,0.4);
+  }
+
+  &.dark {
+    background: rgba(0,0,0,0.5);
+  }
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.video-bg video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+/**
+   * For full-screen video backgrounds, add the
+   * .video-bg--fullscreen class to .video-bg div
+   */
+.video-bg--fullscreen {
+  position: fixed;
+}
+/**
+ * This part should be set separately for each video
+ * if there are multiple videos in your site.
+ * I.e. '.demo-video' is the name of the video
+ */
+.video-bg.home-video {
+  background-image: url(../assets/images/typing-macbook.jpg);
+}
+/**
+ * Fade in videos
+ * Note the .js class - so non js users still
+ * see the video
+ */
+.js .video-bg video {
+  opacity: 0;
+  -webkit-transition: opacity 0.8s linear;
+  -moz-transition: opacity 0.8s linear;
+  transition: opacity 0.8s linear;
+}
+.js .video-bg video.is-playing {
+  opacity: 1;
+}

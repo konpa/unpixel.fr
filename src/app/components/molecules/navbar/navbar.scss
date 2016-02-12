@@ -1,0 +1,18 @@
+.navbar {
+
+  .main-menu {
+
+    @media ($tablet) {
+      display: none;
+    }
+  }
+}
+
+.slide-menu__button {
+  display: none;
+  background: none;
+
+  @media ($tablet) {
+    display: block;
+  }
+}

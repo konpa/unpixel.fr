@@ -1,0 +1,203 @@
+.about-me__container,
+.skills__container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.about-me {
+  background: $soft-grey;
+}
+
+.about-me__container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  padding: 5rem 0 0;
+
+  @media ($phone) {
+    padding: 0;
+  }
+}
+
+.about-me__image {
+  width: 30%;
+
+  @media ($phone) {
+    width: 100%;
+    padding: 0 15%;
+    background: #e5e5e5;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.about-me__description {
+  width: 70%;
+  padding: 0 0 1rem 2rem;
+  font-size: 1rem;
+
+  @media ($tablet) {
+    padding: 0 5% 1rem 5%;
+    font-size: .9rem;
+  }
+
+  @media ($phone) {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    line-height: 1;
+
+    @media ($tablet) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.skills {
+  padding: 8rem 0;
+  background: #e5e5e5;
+
+  @media ($tablet) {
+    padding: 6rem 0;
+  }
+
+  @media ($tablet) {
+    padding: 4rem 0;
+  }
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.skills__content {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.skills__title {
+  padding-bottom: 4rem;
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+
+  @media ($tablet) {
+    padding-bottom: 3rem;
+    font-size: 2rem;
+  }
+
+  @media ($phone) {
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+}
+
+.skill {
+  width: 33.33%;
+  text-align: center;
+  border-right: 1px solid darken($soft-grey, 15%);
+
+  @media ($phone) {
+    width: 50%;
+  }
+
+  &:nth-child(4n) {
+    border: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+
+.skills__other {
+  display: flex;
+  flex-flow: row wrap;
+  width: 33.33%;
+
+  @media ($phone) {
+    width: 100%;
+  }
+}
+
+.skill__other {
+  width: 100%;
+  border: 0;
+
+  @media ($phone) {
+    width: 50%;
+
+    &:nth-child(2n) {
+      border-left: 1px solid darken($soft-grey, 15%);
+    }
+  }
+}
+
+.skill__tool {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.skill__tool__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+
+  svg {
+    max-width: 100%;
+  }
+}
+
+.hobbies {
+  padding: 6rem 0;
+  text-align: center;
+
+  @media ($tablet) {
+    padding: 5rem 5%;
+  }
+
+  @media ($phone) {
+    padding: 4rem 5%;
+  }
+
+  header {
+    font-size: 1.3rem;
+  }
+
+  ul {
+    margin: 3rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 2rem;
+
+    @media ($phone) {
+      width: 3rem;
+      height: 3rem;
+      margin: 0 1rem;
+    }
+  }
+
+  svg {
+    max-width: 100%;
+  }
+}
